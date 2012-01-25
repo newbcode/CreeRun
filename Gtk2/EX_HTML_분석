@@ -1,0 +1,26 @@
+					<dd class="comm pcol2" id="comment1" style='font-family:"994268_10"; font-size:10pt' >축하~ 축하~ <br><br>이제 16분 남은생일 마음껏 즐기게나~~~~~~~ ㅎㅎ
+					<input type="hidden" id="contentModify1" value="축하~ 축하~ 
+
+이제 16분 남은생일 마음껏 즐기게나~~~~~~~ ㅎㅎ" />
+					</dd>
+
+<span class="_commentData" style="display:none;">{type:2, emoticonNo: "12", emoticon:"12",parentCommentNo : "5956448",personaconView : "http://blogimgs.naver.net/imgs/emot/emo12.gif",blogOwner : false, commentNo:5956448, isReply : "false", isReplyOfReply : "false", commentWriter : "후야랑쭌이랑", writerBlogId : "dlgpwls2728", writerNickname : "후야랑쭌이랑" }</span>
+
+
+#댓글 HTML 분석
+
+ <dd 부분 comn pcol2 : 댓글의 시작을 알리는 부분
+id = 댓글의 순서(ex : comment1 첫번째 댓글을 알림)
+value = 댓글의 내용이 value로 들어감
+
+<span  : 댓글을 단 사용자의 정보를 알리는 부분
+personaconView : 사용자의 이모티콘의 URL
+blogOwner :  자신의 블로그 인가를 알리는 부분
+isReply : 루트댓글인가 아닌가를 판단하는 부분( false : 루트댓글임 true : 댓글의 댓글임)
+isReplyOfReply : 댓글의 댓글인가를 판단하는 부분 (false : 댓글의 댓글이 아님 true : 댓글의 댓글임을 알림)
+commentWriter : 댓글을 단 사용자의 닉네임
+writerBlogId : 댓글을 단 사용자의 ID
+writerNickName : 댓글을 단 사용자의 사용자명(닉네임)
+
+
+여기서 활용한 정보는 사용자의 닉네임과 닉네임이 단 댓글의 내용을 해쉬화해 댓글의 내용을 필터링한후 필터링된 사용자의 닉네임을 파싱하였다.
