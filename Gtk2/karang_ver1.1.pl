@@ -91,7 +91,7 @@ sub cb_add_clicked {
     }
 #pcre로 댓글의 내용중 아래와 같은 단어들 포함시 닉네임을 파싱한다.
     foreach my $key ( keys %datas) {
-            if ( $datas{$key} =~ m !응모|도전|새이웃|참여|신청|줄서봐|^http://!) { 
+            if ( $datas{$key} =~ m !응원|^http://!) { 
                 say {$fh} $key;
                 push @ids, $key;
                 $people++;
